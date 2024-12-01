@@ -1,9 +1,18 @@
-//input of speed of car
-const speed = Number(prompt("What speed are you going at?: "));
+function checkspeed(){
+    //input of speed of car
+    const speed = Number(prompt("What speed are you going at?: "));
+    const limit = 70;
+    const merit = 1;
 
-const merit = 1;
+    //if condition to take merits
+    if (speed <= limit){
+        console.log("OK")
 
-//if condition to take merits
-if (speed <= 70){
-    console.log("OK")
-} else if ()
+        if (speed > 70){
+            let demeritpoints = Math.ceil(())
+
+                if merit
+        }
+    }
+}
+

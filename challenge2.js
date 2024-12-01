@@ -2,7 +2,6 @@ function checkspeed(){
     //input of speed of car
     const speed = Number(prompt("What speed are you going at?: "));
     const limit = 70;
-    const merit = 1;
 
     //if condition to take merits
     if (speed <= limit){

@@ -10,7 +10,10 @@ function grades() {
         console.log("Your Grade is B");
     }  else if (score >= 50 && score <= 59) {
         console.log("Your Grade is C");
-    }  
+    } else if (score >= 40 && score <= 49) {
+        console.log("Your Grade is D");
+    }
+ 
     
 }
 

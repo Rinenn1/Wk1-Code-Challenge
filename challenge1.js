@@ -15,7 +15,7 @@ function grades() {
     } else {
         console.log("Your Grade is E");
     }
-    
+
 }
 
 grades();

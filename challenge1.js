@@ -6,7 +6,9 @@ function grades() {
         return;
     } else if (score > 79) {
         console.log("Your Grade is A");
-    } 
+    } else if (score >= 60 && score <= 79) {
+        console.log("Your Grade is B");
+    }  
     
 }
 

@@ -8,6 +8,8 @@ function grades() {
         console.log("Your Grade is A");
     } else if (score >= 60 && score <= 79) {
         console.log("Your Grade is B");
+    }  else if (score >= 50 && score <= 59) {
+        console.log("Your Grade is C");
     }  
     
 }

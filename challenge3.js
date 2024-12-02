@@ -79,4 +79,5 @@ function checkNetSalary(){
 
     return { basicSalary, selfBenefits, netSalary };
 }
-
+  
+checkNetSalary();

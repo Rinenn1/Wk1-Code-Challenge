@@ -46,31 +46,37 @@ function checkNetSalary(){
     let payee = 0;
 
 
-   if (taxablePay > 0 && taxablePay <= 24000) {
-       payee += taxablePay * 0.1;
-   } else if (taxablePay > 24000 && taxablePay <= 288000) {
-       payee += 24000 * 0.1;
-       payee += (taxablePay - 24000) * 0.25;
-   } else if (taxablePay > 288000 && taxablePay <= 388000) {
-       payee += 24000 * 0.1;
-       payee += (288000 - 24000) * 0.25;
-       payee += (taxablePay - 288000) * 0.3;
-   } else if (taxablePay > 388000 && taxablePay <= 6000000) {
-       payee += 24000 * 0.1;
-       payee += (288000 - 24000) * 0.25;
-       payee += (388000 - 288000) * 0.3;
-       payee += (taxablePay - 388000) * 0.325;
-   } else if (taxablePay > 6000000 && taxablePay <= 9600000) {
-       payee += 24000 * 0.1;
-       payee += (288000 - 24000) * 0.25;
-       payee += (388000 - 288000) * 0.3;
-       payee += (6000000 - 388000) * 0.325;
-       payee += (taxablePay - 6000000) * 0.35;
-   } else if (taxablePay > 9600000) {
-       payee += 24000 * 0.1;
-       payee += (288000 - 24000) * 0.25;
-       payee += (388000 - 288000) * 0.3;
-       payee += (6000000 - 388000) * 0.325;
-       payee += (9600000 - 6000000) * 0.35;
-       payee += (taxablePay - 9600000) * 0.4;
-   }
+    if (taxablePay > 0 && taxablePay <= 24000) {
+        payee += taxablePay * 0.1;
+    } else if (taxablePay > 24000 && taxablePay <= 288000) {
+        payee += 24000 * 0.1;
+        payee += (taxablePay - 24000) * 0.25;
+    } else if (taxablePay > 288000 && taxablePay <= 388000) {
+        payee += 24000 * 0.1;
+        payee += (288000 - 24000) * 0.25;
+        payee += (taxablePay - 288000) * 0.3;
+    } else if (taxablePay > 388000 && taxablePay <= 6000000) {
+        payee += 24000 * 0.1;
+        payee += (288000 - 24000) * 0.25;
+        payee += (388000 - 288000) * 0.3;
+        payee += (taxablePay - 388000) * 0.325;
+    } else if (taxablePay > 6000000 && taxablePay <= 9600000) {
+        payee += 24000 * 0.1;
+        payee += (288000 - 24000) * 0.25;
+        payee += (388000 - 288000) * 0.3;
+        payee += (6000000 - 388000) * 0.325;
+        payee += (taxablePay - 6000000) * 0.35;
+    } else if (taxablePay > 9600000) {
+        payee += 24000 * 0.1;
+        payee += (288000 - 24000) * 0.25;
+        payee += (388000 - 288000) * 0.3;
+        payee += (6000000 - 388000) * 0.325;
+        payee += (9600000 - 6000000) * 0.35;
+        payee += (taxablePay - 9600000) * 0.4;
+    }
+
+    let selfBenefits = deductions + payee;
+
+    return { basicSalary, selfBenefits, netSalary };
+}
+

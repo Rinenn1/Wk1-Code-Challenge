@@ -39,3 +39,6 @@ function checkNetSalary(){
         nhifDeduction = 1700;
     }
  
+    let deductions = nhifDeduction + nssfDeduction;
+
+    let taxablePay = basicSalary - deductions;

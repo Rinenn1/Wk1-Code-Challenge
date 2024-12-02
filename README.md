@@ -2,7 +2,7 @@
 
 ## Accessing this repository and it's contents
 
-### Forking a repository
+### Forking the repository
 On GitHub, navigate to the _Spoon-Knife_ repository
 In the top-right corner of the page, click _Fork_.
 In the "Repository name" field, type a name.

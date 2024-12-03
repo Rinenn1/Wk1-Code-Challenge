@@ -1,11 +1,4 @@
-# WEEK1-code-challengeit 
-
-## Repository Structure
-README.md                 # Documentation for the repository
-challenge1.js             # Solution for Student Grade Generator
-challenge2.js             # Solution for Speed Detector
-challenge3.js             # Solution for Net Salary Calculator
-
+# WEEK1-code-challenge
 
 ## Set-up Instructions
 On GitHub, navigate to the _Spoon-Knife_ repository

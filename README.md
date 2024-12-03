@@ -1,14 +1,10 @@
 # WEEK1-code-challengeit 
 
 ## Repository Structure
-
-toy-problem-solutions/
-│
-├── README.md                 # Documentation for the repository
-├── challenge1.js             # Solution for Student Grade Generator
-├── challenge2.js             # Solution for Speed Detector
-├── challenge3.js             # Solution for Net Salary Calculator
-└── .gitignore                # Files to ignore in the repository
+README.md                 # Documentation for the repository
+challenge1.js             # Solution for Student Grade Generator
+challenge2.js             # Solution for Speed Detector
+challenge3.js             # Solution for Net Salary Calculator
 
 
 ## Set-up Instructions

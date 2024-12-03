@@ -2,13 +2,13 @@
 
 ## Repository Structure
 
-```toy-problem-solutions/
+toy-problem-solutions/
 │
 ├── README.md                 # Documentation for the repository
 ├── challenge1.js             # Solution for Student Grade Generator
 ├── challenge2.js             # Solution for Speed Detector
 ├── challenge3.js             # Solution for Net Salary Calculator
-└── .gitignore                # Files to ignore in the repository```
+└── .gitignore                # Files to ignore in the repository
 
 
 ## Set-up Instructions

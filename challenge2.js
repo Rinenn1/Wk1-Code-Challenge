@@ -1,21 +1,43 @@
+//import the readline from node
+import readline from 'readline';
+
+//create a readline interface
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+//define the fucntion to check the speed
 function checkspeed(){
-    //input of speed of car
-    const speed = Number(prompt("What speed are you going at?: "));
-    const limit = 70;
+    //prompt the user for input
+    rl.question('What speed are you going at?; ', (input) => {
+        //parse the input into a variable
+        let speed = parseInt(input)
 
-    //if condition to take merits
-    if (speed <= limit){
-        console.log("OK")
-    
-    } else if (speed > 70){
-        let demeritpoints = Math.ceil((speed - limit)/5)
-        console.log(`You have ${demeritpoints}`)
+        //define a variable for the speed limit
+        const limit = 70;
 
-            if (demeritpoints > 12){
+        //if statement to check the speed
+        if (speed <= 70){
+            console.log('OK')
+        } else {
+            //define the variable for the demerits
+            const demerit = Math.ceil((speed - limit) / 5);
+            if (speed > 70){
+                console.log(`You have ${demerit} demerits`)
+
+                //if statement for the suspending of the license
+                if (demerit > 12){
                     console.log("License suspended")
-            }
-    }
-    
+                }
+            } 
+            
+        }
+
+        //close the readline function
+        rl.close();
+    });
 }
 
+//call the main function to check the speed
 checkspeed();

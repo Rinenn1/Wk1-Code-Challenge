@@ -1,5 +1,5 @@
 //import the readline from node
-import readline from 'readline';
+const readline = require('readline');
 
 //create an interface
 const rl = readline.createInterface({
